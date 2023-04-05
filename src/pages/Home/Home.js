@@ -1,21 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import { ReactDOM} from "react";
+import { Container,Row,Col } from "react-bootstrap";
 import './src/css/home.css';
-import NavBar from "./components/Navbar";
-import BigText from "./components/BigText";
+import Landing from './components/landing';
+import Event from './components/event';
 
-
-class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <div className="home-page">
-        </div>
-        <NavBar />
-        <BigText />
-      </div>
-    );
-  }
+class Home extends Component{
+    render(){
+        return (
+            <div className="landing-page">
+                <Landing />
+                <Event />
+            </div>
+        )
+    }
 }
 
 export default Home;

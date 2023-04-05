@@ -3,6 +3,17 @@
   text-align: center;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-weight:400 ;
+  font-size: 1.3125rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

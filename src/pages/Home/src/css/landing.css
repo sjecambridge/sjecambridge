@@ -1,0 +1,167 @@
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+
+.church-bg{
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10%;
+}
+
+.arrow {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+.church-nobg{
+    max-width: 55rem;
+    width: 90%;
+}
+
+.landing{
+    overflow: hidden;
+    /* height: 100vh; */
+    width: 100%;
+    /* position: absolute; */
+    background-color:#DAF6FE;
+    /* border: 2px black solid; */
+}
+
+.logo{
+    width: 10rem;
+    z-index: 10;
+}
+
+.title-line{
+    border-top:7px solid #8BF62A;
+    width: 20%;
+    padding: 1rem  0;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.welcome-container{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    padding:20rem 5rem 20rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tree{
+    width: 25%;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 500;
+}
+
+.btn-content{
+    background-color: #EF5739;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    color:#F7E8BB;
+    /* height: 3rem; */
+    padding: 0.6rem 2rem;
+    /* width: 10rem; */
+}
+
+.navigation{
+    z-index: 1;
+    /* border: 2px black solid; */
+    list-style: none;
+    /* padding-top:1em; */
+    /* position: fixed; */
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a{
+    margin: 0 0.5em;
+    font-size: 1.1rem;
+    color:black;
+    /* font-family: 'Roboto'; */
+    font-style: italic;
+}
+
+.welcome-title{
+    font-size: max(3.5vw,2.5rem);
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    font-family: Playfair Display ;
+}
+
+.welcome-subtitle{
+    font-size: max(1.5vw,1.2rem);
+    letter-spacing: 0.3rem;
+    font-family: Avenir;
+    padding-bottom: 1rem;
+}
+.sun{
+    background-color: #F7E8BB;
+    border-radius: 50% 50%;
+    position:absolute;
+    width: 100%;
+    transform: translate(0,-60%);
+    /* top:-70%; */
+    z-index: 0;
+    aspect-ratio: 1 / 1;
+}
+
+@media screen and (max-width: 1050px){
+    .navigation{
+        display: none;
+    }
+
+    .logo{
+        margin: 0 auto;
+        width: 10rem;
+    }
+
+    .tree{
+        display: none;
+    }
+
+
+    .church-bg{
+        justify-content: center;
+    }
+}
